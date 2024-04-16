@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+}
+
+.wrapper{
+    max-width: 936px;
+    margin: 0 auto;
+}
+
+.header{
+    border-bottom: 1px solid rgb(130, 130, 130);
+    padding: 30px 0px 30px 225px;
+}
+
+.header__nav__ul__text{
+    display: inline-block;
+    color: rgb(130, 130, 130);
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 45px;
+}
+
+.header__text2{
+    margin-right: 0px;
+}
+
+.h2__style{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 46px;
+    text-decoration: underline;
+}
