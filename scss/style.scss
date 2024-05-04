@@ -1,2 +1,53 @@
 @import '_variable';
 
+*{
+    font-family: sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    background-color: lightblue;
+    width: 200px;
+    height: 100px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.button::before{
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 200px;
+    margin: 5px;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.check:checked + .button{
+    background-color: blue;
+}
+
+.check:checked + .button::before{
+    transform: translateX(100px);
+}
+
+.check{
+    display: none;
+}
+
+
+input:focus{
+    outline: none;
+    
+}
