@@ -1,21 +1,97 @@
-.grid-item{
-    width: 100%;
-    background-color: aqua;
-    border: 2px solid white;
+body {
+  font-family: sans-serif;
 }
 
-.grid-container{
-    display: grid;
-    width: 900px;
-    margin: 0 auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 1fr;
-    gap: 30px;
+.wrapper {
+  width: 1320px;
+  margin: 0 auto;
 }
 
-.item1{
-    /* grid-column: 1/3;
-    grid-row: 1/3; */
-    grid-area: 1/1/3/3;
+.header {
+  height: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgb(230, 230, 230);
 }
-
+.header .header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid rgb(230, 230, 230);
+}
+.header .header__up {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(94, 94, 94);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 9px 0px 9px 0px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+.header .header__up .header__up__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  padding-left: 65px;
+  padding-right: 65px;
+  border-right: 1px solid rgb(230, 230, 230);
+}
+.header .header__up .header__up__item .up__icon {
+  color: rgb(33, 111, 102);
+}
+.header .header__up .header__up__item:last-child {
+  border: none;
+}
+.header .header__nav {
+  padding-left: 67px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(94, 94, 94);
+}
+.header .header__nav .header__nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 75px;
+}
+.header .header__nav .header__nav__list .header__nav__list__link:hover {
+  cursor: pointer;
+  color: rgb(33, 111, 102);
+}
+.header .header__center {
+  border-right: 1px solid rgb(230, 230, 230);
+}
+.header .header__right {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(94, 94, 94);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

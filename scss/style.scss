@@ -1,0 +1,85 @@
+@import 'variable';
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text($fw, $fs, $fcol){
+    font-weight: $fw;
+    font-size: $fs;
+    color: $fcol;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.wrapper{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 126px;
+    display: flex;
+    border-bottom: 1px solid $borcol;
+
+    .header__left{
+        @include flex-center;
+        border-right: 1px solid $borcol;
+    }
+
+    .header__up{
+        @include text(600, 14px, rgb(94, 94, 94));
+        display: flex;
+        justify-content: flex-start;
+        padding: 9px 0px 9px 0px ;
+        border-bottom: 1px solid $borcol;
+
+        .header__up__item{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-left: 65px;
+            padding-right: 65px;
+            border-right: 1px solid $borcol;
+
+            .up__icon{
+                color: rgb(33, 111, 102);
+            }
+        }
+
+        .header__up__item:last-child{
+            border: none;
+        }
+    }
+
+    .header__nav{
+        padding-left: 67px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        @include text(400, 16px, rgb(94, 94, 94));
+        .header__nav__list{
+            display: flex;
+            align-items: center;
+            gap: 75px;
+
+            .header__nav__list__link:hover{
+                cursor: pointer;
+                color: rgb(33, 111, 102);
+            }
+        }
+    }
+
+    .header__center{
+        border-right: 1px solid $borcol;
+    }
+
+    .header__right{
+        @include text(400, 16px, rgb(94, 94, 94));
+        @include flex-center;
+    }
+
+}
