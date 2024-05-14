@@ -1,53 +1,31 @@
 @import '_variable';
 
-*{
-    font-family: sans-serif;
-}
-
-
-.container{
+.block{ 
     width: 100%;
-    height: 100vh;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 2%;
+
+    background: url('../img/Ebby-1000px.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button{
-    background-color: lightblue;
-    width: 200px;
-    height: 100px;
-    border-radius: 200px;
-    cursor: pointer;
-    position: relative;
-    transition: 0.2s;
-}
-
-.button::before{
-    position: absolute;
-    content: "";
-    width: 90px;
-    height: 90px;
-    border-radius: 200px;
-    margin: 5px;
-    background-color: white;
-    transition: 0.2s;
-}
-
-.check:checked + .button{
-    background-color: blue;
-}
-
-.check:checked + .button::before{
-    transform: translateX(100px);
-}
-
-.check{
-    display: none;
-}
-
-
-input:focus{
-    outline: none;
+    flex-direction: row;
     
+    @media screen and (max-width: 600px){
+        display: none;
+        flex-direction: column;
+    }
+}
+
+.exit{
+    display: none;
+
+    @media screen and (max-width: 600px){
+        display: block;
+    }
+
 }
