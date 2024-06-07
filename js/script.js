@@ -1,98 +1,96 @@
-// alert('hello')
-// console.log('Hello world')
+let n = 1
+
+//> <
+// >=  <=
+//a == b
+//a === b
 
 
-//змінні
 
-let a  = 'Hy world'
+// console.log(true == 1)
 
-// dobrogovechoramyzukrainy
+// a = Number(prompt('Введіть перше число'))  
+// b = Number(prompt('Введіть друге число'))  
 
-let pesPatron
+// if(a > b ){
+//     alert('перше число більше')
+// } else if(a === b){
+//     alert('числа однакові')
+// } else{
+//     alert('друге число більше')
+// }
 
-const catAmmo = 100
+// if(a > b ){
+//     alert('перше число більше')
+// }  else{
+//     alert('друге число більше')
+// }
 
-let age
-// age = prompt("Введіть свій вік")
+let a = 1
+let b = 1
 
-// alert(age)
+// let result = a > b ? console.log('перше число більше') 
+// : a == b ? console.log('перше число == 2') 
+// : console.log('друге число більше')
 
+// if(a > b && a === b){
+//     console.log('ураааа ураваа')
+// } else{
+//     console.log('гоолллл')
+// }
 
-// let name = 'andrii'
-// let surname = 'smolinksyi'
-// console.log(name, surname)
-
-
-//створити 2 змінних президент1 президент2
-//за допомогою промта записати в змінні імена президентів
-//і потім за допомогою алертів це вивести
-
-
-// Оголосіть дві змінні: admin та name.
-// Присвойте значення "Іван" змінній name.
-// Скопіюйте значення зі змінної name в admin.
-// Виведіть значення змінної admin, використовуючи функцію alert (яка повинна показати “Іван”).
-
-let name1 = 'Іван'
-let admin = name1
-console.log(name1)
-
-//Створіть програму, яка обчислює суму всіх простих чисел в заданому діапазоні.
-
-
-let count = 1
-
-// let name2 = prompt("Введіть своє імя")
-// alert(`Вітаємо вас ${name2}`) 
-
-let isBigger = 1 < 4
-console.log(isBigger)
-
-let zero = null
-console.log(zero)
-
-let salary = 5000
-
-salary = undefined
-console.log(salary)
-
-salary = 5000
-
-console.log(typeof zero)
+// if(a !== 2){
+//     console.log("так ваще число не 2")
+// }
 
 
-let x;
+// ==
+// ===
+// >
+// <
+// >=
+// <=
+// != !==
 
-x = 1  //number
-x = 1241242135213521354353245423234542353245  //bigint
-x = 'Hello'  //string
-x = true     //boolean
-x = null     //null
-x = undefined //undefined 
+let value = 3
 
-x = {
-    name: 'Kiril',
-    surname: 'Shevchenko'
+switch(value){
+    case 1:                     //if
+        console.log("its 1")
+        break
+    case 2:                     //else if
+        console.log('its 2')
+        break
+    case 3:                     //else if
+        console.log('its 3')
+        break
+    default:
+        console.log('its no 1,2,3')
+        break                    //else
 }
 
-typeof x  
+let x = prompt('')
 
-// let isBoss = confirm("Ви бос?");   
+let number1 = parseFloat(prompt('Введіть перше число'))
+let number2 = parseFloat(prompt('Введіть друге число число'))  
+let operation = prompt("Введіть операцію + * - /")
+let result = 0;
 
-console.log('///////////////////////////////////')
+switch(operation){
+    case "+":
+        result = number1 + number2;
+        break;
+    case "-":
+        result = number1 - number2;
+        break;
+    case "*":
+        result = number1 * number2;
+        break;
+    case "/":
+        result = number1 / number2;
+        break;
+    default:
+        result = 'невірнаа операція'
+}
 
-let value = true
-console.log(typeof value)
-value = String(value)
-console.log(typeof value)
-
-value = "1"
-let sum = "312321"
-console.log(Boolean(sum))
-
-
-let y = 5; 
-let z = 2;
-y--
-let result = y
-console.log(result)
+alert(`Результат ${result}`)
